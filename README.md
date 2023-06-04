@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @hojat-gazestani
 - 👀 I’m interested in Openstack, Ceph,DevOps, SRE, Security, Python, Kubernetes,  
 - 🌱 I’m currently learning AWS, Azure, GCP
-- 💞️ I’m looking to New Opportunities in the European Union
+- 💞️ I’m looking to New Opportunities in international and multinational companies the E.U
 - 📫 How to reach me? My email address "Hojat.Gazestani@gmail.com"
 - 💢 Check my LinkedIN: https://www.linkedin.com/in/hojat-gazestani
 
