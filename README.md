@@ -52,7 +52,7 @@
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=aws,kubernetes,docker,py,vim&perline=3" />
+    <img src="https://skillicons.dev/icons?i=aws,kubernetes,docker,py,vim,linux&perline=3" />
   </a>
 </p>
 
