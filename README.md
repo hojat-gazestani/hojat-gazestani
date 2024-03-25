@@ -50,9 +50,9 @@
     </table>
 </div>
 
-<p align="center">
+<p>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=aws,kubernetes,docker,py,vim,linux,redis,rabbitmq,django,gitlab,git,github,grafana,prometheus,,elasticsearch,nginx&perline=3" />
+    <img src="https://skillicons.dev/icons?i=aws,kubernetes,docker,py,linux,redis,rabbitmq,django,gitlab,git,github,grafana,prometheus,,elasticsearch,nginx&perline=3" />
   </a>
 </p>
 
