@@ -1,73 +1,165 @@
-// pages/index.tsx
-import Head from 'next/head';
+import { ExperienceItem } from "@/components/ExperienceItem";
+import { SectionTitleTag } from "@/components/SectionTitleTag";
+import { SkillTag } from "@/components/SkillTag";
+import { CertificateItem } from "@/components/CertificateItem";
+import { AboutMe } from "@/components/AboutMe";
+import { Skills } from "@/components/SkillTag";
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Hojat Gazestani - Senior DevOps Engineer</title>
-      </Head>
-      <main style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem' }}>
-        <h1>👋 Hojat Gazestani</h1>
-        <p><strong>Senior DevOps Engineer | Tehran, Iran</strong></p>
-        <p>📧 Hojat.Gazestani@gmail.com | 📞 +98 913 863 6926</p>
-        <p>🔗 <a href="https://www.linkedin.com/in/hojat-gazestani" target="_blank">LinkedIn</a> | 
-            <a href="https://medium.com/@hojat-gazestani" target="_blank"> Medium</a> | 
-            <a href="https://www.youtube.com/channel/UCmYCnN9mmHEcSvfP6ytbnGA" target="_blank"> YouTube</a></p>
+    <main className="max-w-5xl mx-auto px-4 py-12 space-y-16">
+      {/* Header */}
+      <header className="text-center">
+        <h1 className="text-4xl font-bold">Hojat Gazestani</h1>
+        <p className="text-lg text-gray-600">Senior DevOps Engineer</p>
+      </header>
 
-        <hr />
+      {/* Personal Info */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">Personal Info</h2>
+        <ul className="text-gray-700 space-y-1">
+          <li><strong>Location:</strong> Tehran, Iran</li>
+          <li><strong>Phone:</strong> (+98)913 863 6926</li>
+          <li><strong>Email:</strong> Hojat.Gazestani@gmail.com</li>
+          <li><strong>GitHub:</strong> hojat-gazestani</li>
+          <li><strong>Medium:</strong> hojat-gazestani</li>
+        </ul>
+      </section>
 
-        <h2>⚙️ Skills</h2>
-        <ul>
-          <li>AWS, Kubernetes, OpenStack, Python</li>
-          <li>GitLab, Kustomize, Flux, ArgoCD</li>
-          <li>Prometheus, Grafana, ELK, Zabbix</li>
-          <li>Redis, RabbitMQ, HAproxy, Nginx</li>
-          <li>Git, Pfsense, Firepower, Juniper</li>
+      <AboutMe />
+
+      <Skills />
+
+
+      <SectionTitleTag text="Experience" />
+      <div className="flex flex-wrap mb-6">
+        <ExperienceItem text="Linux System Admin" />
+        <ExperienceItem text="On-Prem Kubernetes DR" />
+        <ExperienceItem text="Multisite Ceph RGW" />
+      </div>
+
+
+
+      {/* Experience */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">Professional Experience</h2>
+        <div className="space-y-6">
+          <div>
+            <h3 className="text-xl font-bold">Cloud Engineer | DevOps | Kubernetes | AWS</h3>
+            <p className="text-sm text-gray-600">Nethightech Company, Portugal — May 2023 – Present</p>
+            <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
+              <li>Developed scalable services on AWS (EC2, ELB, S3, DynamoDB, CloudWatch).</li>
+              <li>Provisioned AWS EKS clusters with Terraform.</li>
+              <li>Deployed Kubernetes with Kubespray and optimized with Bash.</li>
+              <li>Created HAProxy training content (GitHub, YouTube).</li>
+              <li>Automated deployments using GitLab, Kustomize, Flux.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold">OpenStack DevOps Engineer</h3>
+            <p className="text-sm text-gray-600">ArcFava — Sep 2021 – Dec 2022</p>
+            <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
+              <li>Built infra using OpenStack and Ceph.</li>
+              <li>Scaled Redis and RabbitMQ to clustered environments.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold">DevOps Engineer</h3>
+            <p className="text-sm text-gray-600">Mahsan — Apr 2020 - May 2021</p>
+            <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
+              <li>Refined CI/CD pipelines with Python unit tests.</li>
+              <li>Integrated Zabbix, Grafana, Prometheus, etc.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold">Systems Engineer</h3>
+            <p className="text-sm text-gray-600">Didehbannet — Jul 2016 – Apr 2020</p>
+            <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
+              <li>Led disaster recovery site planning with VMware SRM.</li>
+              <li>Upgraded firewall and network security (Juniper, FortiGate).</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Education */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">Education</h2>
+        <ul className="text-gray-700 space-y-2">
+          <li><strong>Bachelor:</strong> Info Security, UAST, 2016 - 2018</li>
+          <li><strong>Associate:</strong> Software Dev, Chamran College, 2012 - 2014</li>
+        </ul>
+      </section>
+
+      {/* Languages */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">Languages</h2>
+        <p className="text-gray-700">Persian, English, German</p>
+      </section>
+
+      {/* Online Content */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">Online Content</h2>
+        <p className="text-gray-700 mb-2">YouTube: <a href="https://www.youtube.com/@hojatgazestani7142" className="text-blue-600 underline">hojatgazestani7142</a></p>
+        <p className="text-gray-700">Topics: OpenStack, Ceph, Kubernetes, RabbitMQ, HAProxy, Puppet, Vagrant, LPIC3, SRM, Layer 2 Security</p>
+      </section>
+
+      <SectionTitleTag text="Certificates" />
+      <CertificateItem
+        title="CKA - Certified Kubernetes Administrator"
+        issuer="CNCF"
+        year="2024"
+      />
+      <CertificateItem
+        title="Red Hat Certified System Administrator"
+        issuer="Red Hat"
+        year="2023"
+      />
+
+      {/* Certificates */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">Certificates</h2>
+        <ul className="list-disc list-inside text-gray-700 space-y-1">
+          <li><a href="#" className="text-blue-600 underline">AWS Cloud Solutions Architect (Coursera)</a></li>
+          <li><a href="#" className="text-blue-600 underline">DevOps on AWS (Coursera)</a></li>
+          <li><a href="#" className="text-blue-600 underline">Python for Everybody (Coursera)</a></li>
+          <li><a href="#" className="text-blue-600 underline">Google Cloud Fundamentals (Coursera)</a></li>
+          <li>VMware (VCP, NSX, SRM), CCNA/CCNP, MTCNA, LPIC3, PWK, ISMS, EMC</li>
         </ul>
 
-        <h2>💼 Experience</h2>
-        <h3>Cloud Engineer | DevOps | Kubernetes | AWS – Nethightech, Portugal (May 2023 – Present)</h3>
-        <ul>
-          <li>Provisioned scalable AWS infrastructure (EC2, ALB, S3, DynamoDB, CloudWatch)</li>
-          <li>Deployed EKS with Terraform, cut deployment time by 60%</li>
-          <li>Automated Kubernetes with Kubespray and Bash</li>
-          <li>Built video/doc content for HAProxy, Django-based REST API</li>
-        </ul>
 
-        <h3>OpenStack DevOps Engineer – ArcFava (Sep 2021 – Dec 2022)</h3>
-        <ul>
-          <li>Deployed OpenStack + Ceph with 40% improvement in network ops</li>
-          <li>Clustered Redis/RabbitMQ for high availability</li>
-        </ul>
 
-        <h3>DevOps Engineer – Mahsan (Apr 2020 – May 2021)</h3>
-        <ul>
-          <li>CI/CD test automation with Python</li>
-          <li>Monitoring stack integration: Zabbix, Grafana, Prometheus, etc.</li>
-        </ul>
 
-        <h3>Systems Engineer – Didehbannet (2016 – 2020)</h3>
-        <ul>
-          <li>Disaster recovery planning, SAN + vCenter deployment for 500+ VMs</li>
-          <li>Network automation with Python</li>
-        </ul>
-
-        <h2>🎓 Education</h2>
-        <p>Bachelor's in Info Security – UAST (2016-2018)</p>
-        <p>Associate in Software Development – Chamran College (2012-2014)</p>
-
-        <h2>📜 Certificates</h2>
-        <ul>
-          <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/ABC123">AWS Cloud Solutions Architect – Coursera</a></li>
-          <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/XYZ456">DevOps on AWS – Coursera</a></li>
-          <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/123XYZ">Python for Everybody – Coursera</a></li>
-        </ul>
-
-        <h2>🌐 Languages</h2>
-        <p>Persian (Native), English (Fluent), German (Basic)</p>
-      </main>
-    </>
+      {/* Contact Section */}
+      <section className="text-center">
+        <SectionTitleTag text="Contact" />
+        <p className="mt-4">
+          <a
+            href="mailto:your.email@example.com"
+            className="text-blue-600 hover:underline"
+          >
+            your.email@example.com
+          </a>
+        </p>
+        <div className="mt-2 space-x-4">
+          <a
+            href="https://www.linkedin.com/in/hojat-gazestani"
+            target="_blank"
+            className="text-blue-600 hover:underline"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/hojat-gazestani"
+            target="_blank"
+            className="text-blue-600 hover:underline"
+          >
+            GitHub
+          </a>
+        </div>
+      </section>
+      </section>
+    </main>
   );
 }
 

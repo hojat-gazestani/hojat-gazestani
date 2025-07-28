@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from "next/image";
 
 export default function CephCSISetup() {
   return (
@@ -19,7 +20,7 @@ export default function CephCSISetup() {
         </div>
 
         <div className="mb-8">
-          <img 
+          <Image 
             src="/images/ceph-csi-diagram.png" 
             alt="Ceph CSI Architecture Diagram"
             className="rounded-lg shadow-md"
@@ -30,7 +31,7 @@ export default function CephCSISetup() {
           <h2 className="text-2xl font-semibold mt-8 mb-4">Introduction</h2>
           <p>
             Ceph CSI (Container Storage Interface) allows Kubernetes to use Ceph RBD and CephFS volumes 
-            as persistent storage for containerized applications. In this guide, I'll walk through the setup 
+            as persistent storage for containerized applications. In this guide, I will walk through the setup 
             process I used in my production environment.
           </p>
         </section>
