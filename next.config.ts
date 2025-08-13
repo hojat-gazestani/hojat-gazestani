@@ -1,14 +1,12 @@
-import type { NextConfig } from "next";
+// next.config.ts
+const isProd = process.env.NODE_ENV === 'production'
+const repoName = 'hojat-gazestani' 
 
-const isProd = process.env.NODE_ENV === 'production';
-
-const nextConfig: NextConfig = {
+module.exports = {
   output: 'export',
-  assetPrefix: isProd ? '/hojat-gazestani/' : '',
-  basePath: isProd ? '/hojat-gazestani' : '',
+  basePath: isProd ? `/${repoName}` : '',
+  assetPrefix: isProd ? `/${repoName}/` : '',
   images: {
-    unoptimized: true,
-  },
-};
-
-export default nextConfig;
+    unoptimized: true
+  }
+}

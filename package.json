@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next build && next export",
-    "deploy": "gh-pages -d out"
+    "deploy": "gh-pages -d out -b gh-pages"
   },
   "dependencies": {
     "next": "15.4.4",
