@@ -3,6 +3,7 @@ import { SectionTitleTag } from "@/components/SectionTitleTag";
 import { CertificateItem } from "@/components/CertificateItem";
 import { AboutMe } from "@/components/AboutMe";
 import { Skills } from "@/components/SkillTag";
+import { Contact } from "@/components/Contact";
 import Link from "next/link";
 import { blogPost } from "./blog";
 
@@ -176,33 +177,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="text-center">
-        <SectionTitleTag text="Contact" />
-        <p className="mt-4">
-          <a
-            href="mailto:your.email@example.com"
-            className="text-blue-600 hover:underline"
-          >
-            your.email@example.com
-          </a>
-        </p>
-        <div className="mt-2 space-x-4">
-          <a
-            href="https://www.linkedin.com/in/hojat-gazestani"
-            target="_blank"
-            className="text-blue-600 hover:underline"
-          >
-            LinkedIn
-          </a>
-          <a
-            href="https://github.com/hojat-gazestani"
-            target="_blank"
-            className="text-blue-600 hover:underline"
-          >
-            GitHub
-          </a>
-        </div>
-      </section>
+      <Contact />
 
       {/* Recent Articles  */}
       <section>
