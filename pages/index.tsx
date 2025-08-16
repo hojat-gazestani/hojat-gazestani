@@ -9,7 +9,7 @@ import { blogPost } from "./blog";
 
 export default function Home() {
   return (
-    <main className="max-w-5xl mx-auto px-4 py-12 space-y-16">
+    <main className="max-w-5xl mx-auto px-4 py-12 space-y-16 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       {/* Header */}
       <header className="text-center">
         <h1 className="text-4xl font-bold">Hojat Gazestani</h1>
