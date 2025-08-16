@@ -145,18 +145,6 @@ export default function Home() {
         </p>
       </section>
 
-      <SectionTitleTag text="Certificates" />
-      <CertificateItem
-        title="CKA - Certified Kubernetes Administrator"
-        issuer="CNCF"
-        year="2024"
-      />
-      <CertificateItem
-        title="Red Hat Certified System Administrator"
-        issuer="Red Hat"
-        year="2023"
-      />
-
       {/* Certificates */}
       <section>
         <h2 className="text-2xl font-semibold mb-4">Certificates</h2>
