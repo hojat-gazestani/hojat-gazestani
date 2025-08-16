@@ -8,8 +8,9 @@
 - 💞️ I’m looking for New Opportunities in international and multinational companies.
 - 📫 How to reach me? My email address "Hojat.Gazestani@gmail.com"
 - 💢 Check my [Linkedn](https://www.linkedin.com/in/hojat-gazestani)
+- 👨🏼‍💻 My [Profile](https://hojat-gazestani.github.io/hojat-gazestani/)
+- 👨🏼‍💻 My [Medium]("https://medium.com/@hojat-gazestani")
 - 💢 My [YouTube](https://www.youtube.com/channel/UCmYCnN9mmHEcSvfP6ytbnGA)
-
 
 
 
