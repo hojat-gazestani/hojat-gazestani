@@ -1,5 +1,4 @@
 import React from "react";
-import { SectionTitleTag } from "@/components/SectionTitleTag";
 
 interface SkillTagProps {
   text: string;

@@ -7,9 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "gh-pages -d out -b gh-pages"
+    "deploy": "gh-pages -d out -b gh-pages",
+    "version": "date && git add -A",
+    "postversion": "git push && git push --tags"
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
     "next": "15.4.4",
     "react": "19.1.0",
     "react-dom": "19.1.0"

@@ -17,7 +17,7 @@ const KubernetesGitOps: NextPage = () => {
         <div className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
           <p>
-            GitOps has revolutionized how we manage Kubernetes clusters. In this post, I'll share my experience
+            GitOps has revolutionized how we manage Kubernetes clusters. In this post, I will share my experience
             setting up FluxCD for continuous deployment...
           </p>
         </div>

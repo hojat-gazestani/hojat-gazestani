@@ -31,4 +31,4 @@
 </p>
 
 
-
+![Deployment](https://github.com/hojat-gazestani/hojat-gazestani/actions/workflows/deploy.yml/badge.svg)
