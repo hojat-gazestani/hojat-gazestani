@@ -21,15 +21,34 @@ export const Skills = () => {
         <h2 className="text-2xl font-semibold mb-4">Technical Skills</h2>
         <div className="flex flex-wrap">
           {[
-            "Linux", "AWS", "Kubernetes", "OpenStack", "Ceph",  "Python",
-            "Gitlab", "Kustomise", "Flux", "ArgoCD", "GitOps",
-            "Prometheus", "Grafana", "ELK", "Zabbix",
-            "Redis", "RabbitMQ", "HAproxy", "Nginx",
-            "Git", "Pfsense", "Firepower", "Juniper"
-          ].map((skill) => <SkillTag key={skill} text={skill} />)}
+            "Linux",
+            "AWS",
+            "Kubernetes",
+            "OpenStack",
+            "Ceph",
+            "Python",
+            "Gitlab",
+            "Kustomise",
+            "Flux",
+            "ArgoCD",
+            "GitOps",
+            "Prometheus",
+            "Grafana",
+            "ELK",
+            "Zabbix",
+            "Redis",
+            "RabbitMQ",
+            "HAproxy",
+            "Nginx",
+            "Git",
+            "Pfsense",
+            "Firepower",
+            "Juniper",
+          ].map((skill) => (
+            <SkillTag key={skill} text={skill} />
+          ))}
         </div>
       </section>
-
     </>
   );
 };

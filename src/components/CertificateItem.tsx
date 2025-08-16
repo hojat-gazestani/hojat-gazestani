@@ -14,8 +14,9 @@ export const CertificateItem: React.FC<CertificateItemProps> = ({
   return (
     <div className="mb-3">
       <p className="text-md font-bold">{title}</p>
-      <p className="text-sm text-gray-600">{issuer} • {year}</p>
+      <p className="text-sm text-gray-600">
+        {issuer} • {year}
+      </p>
     </div>
   );
 };
-
